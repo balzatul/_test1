@@ -10,7 +10,7 @@ RSpec.configure do |config|
   config.include PageObject::PageFactory
 
   config.before do
-    @browser = Watir::Browser.new :chrome
+    @browser = Watir::Browser.new :ie
     @browser.window.maximize
   end
 

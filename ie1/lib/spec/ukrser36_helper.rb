@@ -2,6 +2,7 @@ require 'rspec'
 #require 'rspec-expectations'
 require 'page-object'
 require 'watir-webdriver'
+# require 'rspec/autorun'
 require_relative '../../lib/pages/ukrser36_page'
 
 RSpec.configure do |config|

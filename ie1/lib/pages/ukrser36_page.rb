@@ -28,11 +28,13 @@ class UkrSer36Page
 
   # == Pop-up menu table
   # == Pop-up menu table -> Preferences section
+  span(:lblMenuPreferences, :xpath => "//span[contains(text(),'Preferences') and @id='btnMenuitem5525']")
   span(:btnMenuMyProfile, :xpath => "//span[contains(text(),'My Profile')]") #'btnMenuitem5538')
   span(:btnMenuMySubscriptions, :xpath => "//span[contains(text(),'My Subscriptions')]")
   span(:btnMenuMyOrganization, :xpath => "//span[contains(text(),'My Organization')]")
   span(:btnMenuExtManager, :xpath => "//span[contains(text(),'Ext Manager')]")
   #  == Pop-up menu table -> Administration section
+  span(:lblMenuAdministration, :xpath => "//span[contains(text(),'Administration') and @id='btnMenuitem5526']")
   span(:btnMenuNavigationMenu, :xpath => "//span[contains(text(),'Navigation Menu')]")
   span(:btnMenuUsers, :xpath => "//span[contains(text(),'Users')]")
   span(:btnMenuSCAnalyzer, :xpath => "//span[contains(text(),'SC Analyzer')]")
@@ -49,6 +51,7 @@ class UkrSer36Page
   span(:btnMenuDefaultshippingCaseManager, :xpath => "//span[contains(text(),'Default shipping Case Manager')]")
   span(:btnMenuFundBudgetPeriod, :xpath => "//span[contains(text(),'Fund Budget Period')]")
   # == Pop-up menu -> TPO Planner
+  span(:lblMenuTPOPlanner, :xpath => "//span[contains(text(),'TPO Planner') and @id='btnMenuitem5527']")
   span(:btnMenuTacticalPlanList, :xpath => "//span[contains(text(),'Tactical Plan List')]")
   span(:btnMenuFundManagement, :xpath => "//span[contains(text(),'Fund Managment')]") # Should be ManagEment
   span(:btnMenuDefaultShippingCaseManager, :xpath => "//span[contains(text(),'DefaultShippingCaseManager')]") # Should be spaces here
@@ -56,19 +59,25 @@ class UkrSer36Page
   span(:btnMenuProductHierarchyViewer, :xpath => "//span[contains(text(),'Product Hierarchy Viewer')]")
   span(:btnMenuFundBulkImport, :xpath => "//span[contains(text(),'Fund Bulk Import')]")
   # == Pop-up menu -> Data Manager
+  span(:lblMenuDataManager, :xpath => "//span[contains(text(),'Data Manager') and @id='btnMenuitem5528']")
   span(:btnMenuControlPanel, :xpath => "//span[contains(text(),'Control Panel')]")
   # == Pop-up menu -> Strategy Planning
+  span(:lblMenuStrategyPlanning, :xpath => "//span[contains(text(),'Strategy Planning') and @id='btnMenuitem5543']")
   span(:btnMenuStrategyPlanList, :xpath => "//span[contains(text(),'Strategy Plan List')]")
   span(:btnMenuSCAManager, :xpath => "//span[contains(text(),'SCA Manager')]")
   span(:btnMenuStudyList, :xpath => "//span[contains(text(),'Study List')]")
   # == Pop-up menu -> SCHEDULER
-  span(:btnMenuSCHEDULER, :xpath => "//span[contains(text(),'SCHEDULER')]")
+  span(:lblMenuSCHEDULER, :xpath => "//span[contains(text(),'SCHEDULER') and @id='btnMenuitem9550']")
+  span(:btnMenuSCHEDULER, :xpath => "//span[contains(text(),'SCHEDULER') and @id='btnMenuitem9551']")
   # == Pop-up menu -> Payments
+  span(:lblMenuPayments, :xpath => "//span[contains(text(),'Payments') and @id = 'btnMenuitem9563']")
   span(:btnMenuPaymentWorkBench, :xpath => "//span[contains(text(),'Payment WorkBench')]")
   span(:btnMenuChargeTypeAccountMappingManager, :xpath => "//span[contains(text(),'Charge Type Account Mapping Manager')]")
   # == Pop-up menu -> Calendar
-  span(:btnMenuCalendar, :xpath => "//span[contains(text(),'Calendar')]")
+  span(:lblMenuCalendar, :xpath => "//span[contains(text(),'Calendar') and @id='btnMenuitem9572']")
+  span(:btnMenuCalendar, :xpath => "//span[contains(text(),'Calendar') and @id='btnMenuitem9573']")
   # == Pop-up menu -> New tab
+  span(:lblMenuNewTab, :xpath => "//span[contains(text(),'New tab') and @id='btnMenuitem9594']")
   span(:btnMenuFNFundManager, :xpath => "//span[contains(text(),'FN_Fund_Manager')]")
 
 

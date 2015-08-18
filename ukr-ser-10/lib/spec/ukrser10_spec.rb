@@ -1,18 +1,18 @@
 require 'rspec'
-require_relative 'ukrser36_helper'
+require_relative 'ukrser10_helper'
 
 
-describe 'Open UkrSer36 page and' do
+describe 'Open UkrSer10 page and' do
   before(:each) do
-    visit UkrSer36Page
+    visit UkrSer10Page
 
   end
 
   it 'log in' do
-    on(UkrSer36Page) do |page|
+    on(UkrSer10Page) do |page|
       # visit UkrSer36Page
       page.txtLogin1_UserName = "p.i@gsapps.com"
-      page.txtLogin1_Password = "1qazXSW@"
+      page.txtLogin1_Password = "!QAZxsw2"
       page.check_chkLogin1_RememberMe
       page.btnLogin1_Login
 
@@ -126,8 +126,8 @@ describe 'Open UkrSer36 page and' do
       # page.btnMenu_element.click
       # page.btnMenuStudyList_element.click
       # == Pop-up menu -> SCHEDULER
-      page.btnMenu_element.click
-      page.btnMenuSCHEDULER_element.click
+      # page.btnMenu_element.click
+      # page.btnMenuSCHEDULER_element.click
       # == Pop-up menu -> Payments
       # page.btnMenu_element.click
       # page.btnMenuPaymentWorkBench_element.click
@@ -142,11 +142,20 @@ describe 'Open UkrSer36 page and' do
       # page.btnMenuFNFundManager_element.click
 
 
-      page.btnHome_element.click
+      # page.btnHome_element.click
+
+      page.btnAdministration_element.click
+
+      page.tblcellGMI24_element.click
+      page.tblcellSCJ98UkrSer10_element.click
+      page.btnEnlistInOrg_element.click
+
+      # page.btnOK_element.click
 
 
-      expect(page.lblMenuSCHEDULER?).to be_truthy
-      expect(page.lnkLogout?).to be_truthy
+      # expect(page.lblMenuSCHEDULER?).to be_truthy
+      # expect(page.lnkLogout?).to be_truthy
+      sleep 2
     end
   end
 
