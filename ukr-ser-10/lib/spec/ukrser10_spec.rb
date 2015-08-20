@@ -1,4 +1,5 @@
 require 'rspec'
+require 'watir'
 require_relative 'ukrser10_helper'
 
 
@@ -10,7 +11,8 @@ describe 'Open UkrSer10 page and' do
 
   it 'log in' do
     on(UkrSer10Page) do |page|
-      # visit UkrSer36Page
+      # visit UkrSer10Page
+      # puts @browser.title
       page.txtLogin1_UserName = "p.i@gsapps.com"
       page.txtLogin1_Password = "!QAZxsw2"
       page.check_chkLogin1_RememberMe
@@ -146,16 +148,47 @@ describe 'Open UkrSer10 page and' do
 
       page.btnAdministration_element.click
 
-      page.tblcellGMI24_element.click
+      # page.tblcellGMI24_element.click
       page.tblcellSCJ98UkrSer10_element.click
       page.btnEnlistInOrg_element.click
 
-      # page.btnOK_element.click
+      page.btnOK
+
+      # sleep 3
+
+      page.liStrategyPlanning_element.click
+
+      # page.liPlanCycleList_element.click
+      page.liPlansList_element.click
+
+      page.mnuDefinePlan_element.click
+
+      # puts "browser.alert.exists before:"
+      #puts browser.alert.exists?
+      # @browser.windows.each {|awindow| puts awindow.caption}
+
+      page.btnOK_AddNewPlan_Dialog #_element.click
+
+      sleep 3
+
+      # browser.confirm(true) {browser.button.click}
+
+      # browser = GemName::CucumberFormatter::Browser.get_browser
+      # browser.alert.ok
+      @browser.alert.close
+
+      # @browser.alert.ok
+
+      sleep 3
+
+
+      #puts 'browser.alert.exists: ' + browser.alert.exists?
+      #browser.alert.ok if browser.alert.exists?
 
 
       # expect(page.lblMenuSCHEDULER?).to be_truthy
       # expect(page.lnkLogout?).to be_truthy
-      sleep 2
+      # sleep 3
     end
   end
 

@@ -1,0 +1,1 @@
+ruby -Ilib -Ispec -rrspec/autorun ukr_ser_36_spec.rb
